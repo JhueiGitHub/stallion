@@ -12,13 +12,19 @@ const projects = [
     id: 1,
     src: "/media/port1.png",
     alt: "Project 1",
-    link: "https://www.stallionarchitecture.co.uk",
+    link: "https://sonutrition.framer.ai",
   },
   {
     id: 2,
     src: "/media/port2.png",
     alt: "Project 2",
-    link: "https://sonutrition.framer.ai",
+    link: "https://orionos.net",
+  },
+  {
+    id: 3,
+    src: "/media/port2.png",
+    alt: "Project 3",
+    link: "https://stallionarchitecture.co.uk",
   },
 ];
 
