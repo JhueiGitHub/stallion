@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     src: "/media/port3.png",
     alt: "Project 3",
-    link: "https://stallionarchitecture.co.uk",
+    link: "https://matthewsheehan.wixsite.com/aresmc",
   },
 ];
 

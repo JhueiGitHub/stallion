@@ -14,7 +14,7 @@ const NeonHeading: React.FC<NeonHeadingProps> = ({ text }) => {
       border-[0.16rem] border-white rounded-[0.8rem]
       uppercase
       animate-[flicker_1.5s_infinite_alternate]
-      neon-glow
+      neon-glow mb-24
     "
     >
       {text}
