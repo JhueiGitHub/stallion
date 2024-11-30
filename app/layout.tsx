@@ -1,5 +1,6 @@
 import "./globals.css";
 import NavBar from "./components/NavBar";
+import { DocsProvider } from "./components/DocsContext";
 
 export const metadata = {
   title: "My Portfolio",
@@ -14,8 +15,10 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-        <NavBar />
-        {children}
+        <DocsProvider>
+          <NavBar />
+          {children}
+        </DocsProvider>
       </body>
     </html>
   );

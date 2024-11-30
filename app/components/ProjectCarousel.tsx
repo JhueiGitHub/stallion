@@ -12,13 +12,13 @@ const projects = [
     id: 1,
     src: "/media/port1.png",
     alt: "Project 1",
-    link: "https://orionos.net",
+    link: "https://znos.vercel.app",
   },
   {
     id: 2,
     src: "/media/port2.png",
     alt: "Project 2",
-    link: "https://sonutrition.framer.ai",
+    link: "https://sonutrition.co.uk",
   },
   {
     id: 3,
@@ -66,14 +66,14 @@ export default function ProjectCarousel() {
       </motion.div>
       <button
         onClick={prevSlide}
-        className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 text-green-500 hover:text-green-400 transition-colors"
+        className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 text-[#4C4F69]/60 hover:text-[#4C4F69]/75 transition-colors"
         aria-label="Previous project"
       >
         <ChevronLeft size={48} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 text-green-500 hover:text-green-400 transition-colors"
+        className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 text-[#4C4F69]/60 hover:text-[#4C4F69]/75 hover:text-green-400 transition-colors"
         aria-label="Next project"
       >
         <ChevronRight size={48} />

@@ -4,8 +4,10 @@
 import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
+import { useDocs } from "./DocsContext"; // Import the context
 
 export default function NavBar() {
+  const { setShowDocs } = useDocs() || { setShowDocs: () => {} }; // Provide a default function
   const { scrollY } = useScroll();
   const [hidden, setHidden] = useState(false);
 
@@ -26,9 +28,17 @@ export default function NavBar() {
       }}
       animate={hidden ? "hidden" : "visible"}
       transition={{ duration: 0.35, ease: "easeInOut" }}
-      className="fixed top-0 left-0 right-0 w-full h-[168px] bg-black bg-opacity-30 flex justify-center items-center z-50"
+      className="fixed top-0 left-0 right-0 w-full h-[104px] bg-black bg-opacity-30 flex justify-center items-center z-50"
     >
-      <div className="relative w-[176px] h-[126px]">
+      <div className="ml-4">
+        <button
+          className="text-white/90 hover:underline text-[24px] font-exemplar-pro font-normal"
+          onClick={() => setShowDocs(true)} // Pass the required argument
+        >
+          DOCS
+        </button>
+      </div>
+      <div className="relative w-[126px] h-[87px] translate-y-1 ml-4">
         <Image
           src="/media/logo.png"
           alt="Logo"

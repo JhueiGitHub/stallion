@@ -7,8 +7,12 @@ import ProjectCarousel from "./components/ProjectCarousel";
 import TechStack from "./components/TechStack";
 import NeonHeading from "./components/NeonHeading";
 import ServiceCard from "./components/ServiceCard";
+import Documentation from "./components/Documentation";
+import { useDocs } from "./components/DocsContext";
 
 export default function Home() {
+  const { showDocs } = useDocs() || { showDocs: false };
+
   return (
     <main className="min-h-screen flex flex-col items-center justify-center relative">
       <div className="absolute inset-0 w-full h-full">
@@ -70,6 +74,7 @@ export default function Home() {
           <ServiceCard title="Empire Package" price="£2499" />
         </motion.div>
       </div>
+      {showDocs && <Documentation />}
     </main>
   );
 }
