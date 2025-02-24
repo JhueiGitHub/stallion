@@ -26,7 +26,7 @@ export default function OTPWrapper({ children }: OTPWrapperProps) {
 
   const handleComplete = (value: string) => {
     const upperValue = value.toUpperCase();
-    if (upperValue === "ORIONX") {
+    if (upperValue === "STLLNX") {
       setError(false);
       setTimeout(() => {
         setIsAuthenticated(true);
@@ -60,7 +60,9 @@ export default function OTPWrapper({ children }: OTPWrapperProps) {
             className="fixed inset-0 z-[100] flex items-center justify-center bg-[#010101]"
           >
             <div
-              className={`flex flex-col items-center scale-125 ${shake ? "animate-shake" : ""}`}
+              className={`flex flex-col items-center scale-125 ${
+                shake ? "animate-shake" : ""
+              }`}
               style={exemplarPro.style}
             >
               <InputOTP
@@ -75,7 +77,7 @@ export default function OTPWrapper({ children }: OTPWrapperProps) {
                 maxLength={6}
                 className="group flex items-center gap-6"
               >
-                <InputOTPGroup className="rounded-xl [&>div]:border-[#FFFFFF]/[0.09]">
+                <InputOTPGroup className="rounded-xl [&>div]:border-[#152020]">
                   <InputOTPSlot index={0} className={slotClassName} />
                   <InputOTPSlot index={1} className={slotClassName} />
                   <InputOTPSlot index={2} className={slotClassName} />
@@ -83,7 +85,7 @@ export default function OTPWrapper({ children }: OTPWrapperProps) {
 
                 <InputOTPSeparator className="text-[#FFFFFF]/[0.09]" />
 
-                <InputOTPGroup className="rounded-xl [&>div]:border-[#FFFFFF]/[0.09]">
+                <InputOTPGroup className="rounded-xl [&>div]:border-[#152020]">
                   <InputOTPSlot index={3} className={slotClassName} />
                   <InputOTPSlot index={4} className={slotClassName} />
                   <InputOTPSlot index={5} className={slotClassName} />

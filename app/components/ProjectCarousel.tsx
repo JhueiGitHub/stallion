@@ -42,7 +42,7 @@ export default function ProjectCarousel() {
   };
 
   return (
-    <div className="relative w-[919px] h-[597px] opacity-87">
+    <div className="relative w-[919px] h-[597px] opacity-100">
       <motion.div
         key={currentIndex}
         initial={{ opacity: 0 }}
@@ -61,19 +61,20 @@ export default function ProjectCarousel() {
             alt={projects[currentIndex].alt}
             fill
             style={{ objectFit: "cover" }}
+            className="opacity-80"
           />
         </Link>
       </motion.div>
       <button
         onClick={prevSlide}
-        className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 text-[#4C4F69]/60 hover:text-[#4C4F69]/75 transition-colors"
+        className="absolute left-[-60px] top-1/2 transform -translate-y-1/2 text-[#152020]  hover:text-[#4C4F69]/45 transition-colors"
         aria-label="Previous project"
       >
         <ChevronLeft size={48} />
       </button>
       <button
         onClick={nextSlide}
-        className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 text-[#4C4F69]/60 hover:text-[#4C4F69]/75 hover:text-green-400 transition-colors"
+        className="absolute right-[-60px] top-1/2 transform -translate-y-1/2 text-[#152020]  hover:text-[#4C4F69]/45  transition-colors"
         aria-label="Next project"
       >
         <ChevronRight size={48} />
