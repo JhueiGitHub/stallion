@@ -30,14 +30,14 @@ export default function NavBar() {
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className="fixed top-0 left-0 right-0 w-full h-[104px] bg-black bg-opacity-30 flex justify-center items-center z-50"
     >
-      <div className="ml-4">
+      {/* <div className="ml-4">
         <button
           className="text-white/90 hover:underline text-[24px] font-exemplar-pro font-normal"
           onClick={() => setShowDocs(true)} // Pass the required argument
         >
           DOCS
         </button>
-      </div>
+      </div> */}
       <div className="relative w-[126px] h-[87px] translate-y-1 ml-4">
         <Image
           src="/media/logo.png"

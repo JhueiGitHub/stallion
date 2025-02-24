@@ -14,7 +14,7 @@ export default function Home() {
   const { showDocs } = useDocs() || { showDocs: false };
 
   return (
-    <main className="min-h-screen flex flex-col items-center justify-center relative">
+    <main className="min-h-screen flex flex-col items-center justify-center relative bg-black">
       <div className="absolute inset-0 w-full h-full">
         <Image
           src="/media/bg.png"

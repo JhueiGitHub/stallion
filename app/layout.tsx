@@ -1,6 +1,7 @@
 import "./globals.css";
 import NavBar from "./components/NavBar";
 import { DocsProvider } from "./components/DocsContext";
+import OTPWrapper from "./components/custom-otp-input";
 
 export const metadata = {
   title: "My Portfolio",
@@ -13,11 +14,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" className="bg-black">
       <body>
         <DocsProvider>
           <NavBar />
-          {children}
+          <OTPWrapper>{children}</OTPWrapper>
         </DocsProvider>
       </body>
     </html>
