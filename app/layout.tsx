@@ -3,6 +3,7 @@ import NavBar from "./components/NavBar";
 import { DocsProvider } from "./components/DocsContext";
 import OTPWrapper from "./components/custom-otp-input";
 import { ProcessProvider } from "./components/ProcessContext";
+import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
   title: "My Portfolio",
@@ -17,12 +18,11 @@ export default function RootLayout({
   return (
     <html lang="en" className="bg-black h-screen w-screen">
       <body>
+        <Analytics />
         <DocsProvider>
           <ProcessProvider>
             <NavBar />
-            {/* <OTPWrapper> */}
-            {children}
-            {/* </OTPWrapper> */}
+            <OTPWrapper>{children}</OTPWrapper>
           </ProcessProvider>
         </DocsProvider>
       </body>

@@ -10,20 +10,32 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    src: "/media/port1.png",
+    src: "/media/orion.png",
     alt: "Project 1",
-    link: "https://znos.vercel.app",
+    link: "https://orionos.net",
   },
   {
     id: 2,
-    src: "/media/port2.png",
+    src: "/media/so.png",
     alt: "Project 2",
     link: "https://sonutrition.co.uk",
   },
   {
     id: 3,
-    src: "/media/port3.png",
+    src: "/media/dopa.png",
     alt: "Project 3",
+    link: "",
+  },
+  {
+    id: 4,
+    src: "/media/darkrun.png",
+    alt: "Project 4",
+    link: "",
+  },
+  {
+    id: 5,
+    src: "/media/ares.png",
+    alt: "Project 5",
     link: "https://matthewsheehan.wixsite.com/aresmc",
   },
 ];
