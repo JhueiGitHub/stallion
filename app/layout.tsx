@@ -6,7 +6,7 @@ import { ProcessProvider } from "./components/ProcessContext";
 import { Analytics } from "@vercel/analytics/react";
 
 export const metadata = {
-  title: "My Portfolio",
+  title: "Stallion",
   description: "Welcome to my portfolio",
 };
 

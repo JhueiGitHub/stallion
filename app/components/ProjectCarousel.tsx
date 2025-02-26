@@ -24,13 +24,13 @@ const projects = [
     id: 3,
     src: "/media/dopa.png",
     alt: "Project 3",
-    link: "",
+    link: "n/a",
   },
   {
     id: 4,
     src: "/media/darkrun.png",
     alt: "Project 4",
-    link: "",
+    link: "n/a",
   },
   {
     id: 5,
