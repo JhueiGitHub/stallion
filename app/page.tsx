@@ -8,10 +8,13 @@ import TechStack from "./components/TechStack";
 import NeonHeading from "./components/NeonHeading";
 import ServiceCard from "./components/ServiceCard";
 import Documentation from "./components/Documentation";
+import Process from "./components/Process";
 import { useDocs } from "./components/DocsContext";
+import { useProcess } from "./components/ProcessContext";
 
 export default function Home() {
   const { showDocs } = useDocs() || { showDocs: false };
+  const { showProcess } = useProcess() || { showProcess: false };
 
   return (
     <main className="min-h-screen flex flex-col items-center justify-center relative bg-black">
@@ -75,6 +78,7 @@ export default function Home() {
         </motion.div>
       </div>
       {showDocs && <Documentation />}
+      {showProcess && <Process />}
     </main>
   );
 }
