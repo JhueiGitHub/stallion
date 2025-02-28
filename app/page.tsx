@@ -9,7 +9,7 @@ import NeonHeading from "./components/NeonHeading";
 import ServiceCard from "./components/ServiceCard";
 import Documentation from "./components/OldDocumentation";
 import Process from "./components/Process";
-import { useDocs } from "./components/OldDocsContext";
+import { useDocs } from "./components/DocsContext";
 import { useProcess } from "./components/ProcessContext";
 
 export default function Home() {
