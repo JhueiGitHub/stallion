@@ -1,6 +1,6 @@
 import "./globals.css";
 import NavBar from "./components/NavBar";
-import { DocsProvider } from "./components/DocsContext";
+import { DocsProvider } from "./components/OldDocsContext";
 import OTPWrapper from "./components/custom-otp-input";
 import { ProcessProvider } from "./components/ProcessContext";
 import { Analytics } from "@vercel/analytics/react";

@@ -3,26 +3,26 @@
 import React, { createContext, useContext, useState } from "react";
 
 // Define the context value type
-interface DocsContextType {
-  showDocs: boolean;
-  setShowDocs: React.Dispatch<React.SetStateAction<boolean>>;
+interface ProcessContextType {
+  showProcess: boolean;
+  setShowProcess: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
 // Update the createContext with the correct type
-const DocsContext = createContext<DocsContextType | null>(null);
+const ProcessContext = createContext<ProcessContextType | null>(null);
 
-export const DocsProvider: React.FC<{ children: React.ReactNode }> = ({
+export const ProcessProvider: React.FC<{ children: React.ReactNode }> = ({
   children,
 }) => {
-  const [showDocs, setShowDocs] = useState(false);
+  const [showProcess, setShowProcess] = useState(false);
 
   return (
-    <DocsContext.Provider value={{ showDocs, setShowDocs }}>
+    <ProcessContext.Provider value={{ showProcess, setShowProcess }}>
       {children}
-    </DocsContext.Provider>
+    </ProcessContext.Provider>
   );
 };
 
-export const useDocs = () => {
-  return useContext(DocsContext);
+export const useProcess = () => {
+  return useContext(ProcessContext);
 };

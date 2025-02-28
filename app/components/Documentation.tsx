@@ -1,53 +1,40 @@
-import { useState } from "react";
-import { SidebarProvider } from "@/components/ui/sidebar";
-import { AppSidebar } from "../components/AppSidebar";
-import Introduction from "./docs/introduction";
-import ProjectStructure from "./docs/project-structure";
-import DataFetching from "./docs/data-fetching";
-import Routing from "./docs/routing";
-import FileConventions from "./docs/file-conventions";
-import Components from "./docs/components";
-
-const componentMap = {
-  Introduction,
-  ProjectStructure,
-  DataFetching,
-  Routing,
-  FileConventions,
-  Components,
-};
-
-type ComponentName = keyof typeof componentMap;
+import { motion } from "framer-motion";
+import Image from "next/image";
+import NavBar from "./NavBar";
+import NeonHeading from "./NeonHeading";
+import TechStack from "./TechStack";
 
 export default function Documentation() {
-  const [activeComponent, setActiveComponent] =
-    useState<ComponentName>("Introduction");
-
-  const ActiveComponent = componentMap[activeComponent];
-
   return (
-    <SidebarProvider>
-      <div className="fixed inset-0 bg-[#010203] text-[#CCCCCC] z-50 flex">
-        <AppSidebar setActiveComponent={setActiveComponent} />
-        <main
-          className="flex-1 p-8"
-          style={{
-            border: "0.6px solid rgba(255, 255, 255, 0.09)",
-            borderRadius: "4px",
-          }}
+    <div className="inset-0 bg-red-500 text-[#CCCCCC] z-50 min-h-screen w-full">
+      <main className="min-h-screen w-full flex flex-col items-center justify-center bg-red-500">
+        <div className="absolute inset-0 w-full h-full">
+          <Image
+            src="/media/bgdocs.png"
+            alt="Background"
+            fill
+            className="object-fill object-top"
+            sizes="100vw"
+            priority
+          />
+        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
-          <h1 className="text-4xl font-bold mb-4" style={{ fontWeight: 81 }}>
-            Documentation
-          </h1>
-          <ActiveComponent />
-          <button
-            className="mt-4 p-2 bg-red-500 text-white rounded"
-            onClick={() => window.location.reload()} // Close the documentation
+          <NavBar />
+        </motion.div>
+        <div className="absolute top-0 z-10 mt-[270px] flex flex-col items-center">
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ duration: 0.5, delay: 0.8 }}
           >
-            Close
-          </button>
-        </main>
-      </div>
-    </SidebarProvider>
+            <NeonHeading text="DOCS" />
+          </motion.div>
+        </div>
+      </main>
+    </div>
   );
 }

@@ -13,7 +13,7 @@ export default function Documentation() {
             src="/media/bgdemon.png"
             alt="Background"
             fill
-            className="object-cover object-top"
+            className="object-fill object-top"
             sizes="100vw"
             priority
           />

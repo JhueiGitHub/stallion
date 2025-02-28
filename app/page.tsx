@@ -7,9 +7,9 @@ import ProjectCarousel from "./components/ProjectCarousel";
 import TechStack from "./components/TechStack";
 import NeonHeading from "./components/NeonHeading";
 import ServiceCard from "./components/ServiceCard";
-import Documentation from "./components/Documentation";
+import Documentation from "./components/OldDocumentation";
 import Process from "./components/Process";
-import { useDocs } from "./components/DocsContext";
+import { useDocs } from "./components/OldDocsContext";
 import { useProcess } from "./components/ProcessContext";
 
 export default function Home() {
@@ -23,7 +23,7 @@ export default function Home() {
           src="/media/bg.png"
           alt="Background"
           fill
-          className="object-cover object-top"
+          className="object-fill object-top"
           sizes="100vw"
           priority
         />
