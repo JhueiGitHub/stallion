@@ -37,7 +37,7 @@ export default function NavBar() {
           className="text-[#223D3D] hover:text-[#4C4F69]/45 text-[24px] font-exemplar-pro font-normal"
           onClick={() => setShowDocs(true)} // Pass the required argument
         >
-          Studio
+          DOCS
         </button>
       </div>
       <div
@@ -57,7 +57,7 @@ export default function NavBar() {
           className="text-[#223D3D] hover:text-[#4C4F69]/45 text-[24px] font-exemplar-pro font-normal"
           onClick={() => setShowProcess(true)} // Pass the required argument
         >
-          Process
+          WORK
         </button>
       </div>
     </motion.nav>
