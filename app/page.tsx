@@ -7,7 +7,7 @@ import ProjectCarousel from "./components/ProjectCarousel";
 import TechStack from "./components/TechStack";
 import NeonHeading from "./components/NeonHeading";
 import ServiceCard from "./components/ServiceCard";
-import Documentation from "./components/OldDocumentation";
+import Documentation from "./components/Documentation";
 import Process from "./components/Process";
 import { useDocs } from "./components/DocsContext";
 import { useProcess } from "./components/ProcessContext";
