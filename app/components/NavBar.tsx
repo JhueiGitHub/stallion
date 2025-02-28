@@ -4,7 +4,7 @@
 import Image from "next/image";
 import { motion, useScroll, useMotionValueEvent } from "framer-motion";
 import { useState } from "react";
-import { useDocs } from "./OldDocsContext"; // Import the context
+import { useDocs } from "./DocsContext"; // Import the context
 import { useProcess } from "./ProcessContext"; // Import the context
 
 export default function NavBar() {
