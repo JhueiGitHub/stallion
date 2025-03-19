@@ -32,14 +32,14 @@ export default function NavBar() {
       transition={{ duration: 0.35, ease: "easeInOut" }}
       className="fixed top-0 left-0 right-0 w-full h-[104px] bg-black bg-opacity-30 flex justify-center items-center z-50 gap-[60px]"
     >
-      <div className="ml-4">
+      {/* <div className="ml-4">
         <button
           className="text-[#223D3D] hover:text-[#4C4F69]/45 text-[24px] font-exemplar-pro font-normal"
           onClick={() => setShowDocs(true)} // Pass the required argument
         >
           DOCS
         </button>
-      </div>
+      </div> */}
       <div
         className="relative w-[126px] h-[87px] translate-y-1 ml-4"
         onClick={() => window.location.reload()}
@@ -52,14 +52,14 @@ export default function NavBar() {
           priority
         />
       </div>
-      <div className="ml-4">
+      {/* <div className="ml-4">
         <button
           className="text-[#223D3D] hover:text-[#4C4F69]/45 text-[24px] font-exemplar-pro font-normal"
           onClick={() => setShowProcess(true)} // Pass the required argument
         >
           WORK
         </button>
-      </div>
+      </div> */}
     </motion.nav>
   );
 }
