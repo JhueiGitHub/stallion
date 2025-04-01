@@ -10,21 +10,21 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 const projects = [
   {
     id: 1,
-    src: "/media/orion.png",
+    src: "/media/noire.png",
     alt: "Project 1",
-    link: "https://orionos.net",
+    link: "n/a",
   },
   {
     id: 2,
-    src: "/media/so.png",
+    src: "/media/orion.png",
     alt: "Project 2",
-    link: "https://sonutrition.co.uk",
+    link: "https://orionos.net",
   },
   {
     id: 3,
-    src: "/media/dopa.png",
+    src: "/media/so.png",
     alt: "Project 3",
-    link: "n/a",
+    link: "https://sonutrition.co.uk",
   },
   {
     id: 4,
@@ -34,8 +34,14 @@ const projects = [
   },
   {
     id: 5,
-    src: "/media/ares.png",
+    src: "/media/dopa.png",
     alt: "Project 5",
+    link: "n/a",
+  },
+  {
+    id: 6,
+    src: "/media/ares.png",
+    alt: "Project 6",
     link: "https://matthewsheehan.wixsite.com/aresmc",
   },
 ];
